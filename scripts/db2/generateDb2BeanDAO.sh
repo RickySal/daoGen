@@ -176,7 +176,7 @@ else
 	printf "$2DTO" >> Db2"$2"DAO.java
 fi
 
-printf "();\n\n" >> Db2"$2"DAO.java
+printf "();\n\n				//TODO some useful code for Db2 mapping\n" >> Db2"$2"DAO.java
 
 for i in $( seq 1 $nFields )
 do
@@ -197,7 +197,7 @@ do
 	
 done
 				
-printf "\n				result = o;
+printf "\n\n				result = o;
 			}
 			
 			rs.close();
