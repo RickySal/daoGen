@@ -24,7 +24,7 @@ do
 		return this.${!fieldNameParamIndex};
 	}\n\n" >> $2.java
 	
-	printf "	public set$fieldNameFirstUpper(${!fieldTypeParamIndex} ${!fieldNameParamIndex}){
+	printf "	public void set$fieldNameFirstUpper(${!fieldTypeParamIndex} ${!fieldNameParamIndex}){
 		this.${!fieldNameParamIndex} = ${!fieldNameParamIndex};
 	}\n\n" >> $2.java
 done
